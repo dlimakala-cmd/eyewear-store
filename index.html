@@ -183,7 +183,465 @@
     </header>
 
     <nav>
+        <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Énergie Vision - Opticien</title>
+    <style>
+        /* Reset de base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #000; /* Noir */
+            color: #fff;
+        }
+
+        header {
+            background-color: #FFD700; /* Jaune */
+            color: #000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background-color: #111;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #FFD700;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1581090700227-4c4f50b1a3f5') center/cover no-repeat;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h2 {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px 25px;
+            border-radius: 5px;
+            color: #FFD700;
+            font-size: 2rem;
+        }
+
+        .section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section h2 {
+            text-align: center;
+            color: #FFD700;
+            margin-bottom: 30px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            background-color: #111;
+            border: 2px solid #FFD700;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product h3 {
+            margin: 15px 0;
+            color: #FFD700;
+        }
+
+        .product p {
+            padding: 0 10px 15px;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background-color: #FFD700;
+            color: #000;
+            text-align: center;
+            padding: 14px;
+            margin-top: 30px;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-icon {
+            width: 35px;
+            height: 35px;
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+            border: 4px solid #FFD700;
+            border-radius: 8px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 2rem;
+            color: #FFD700;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Energy Vision</h1>
+        <p>Votre opticien de confiance</p>
+    </header>
+
+    <nav>
         <a href="#accueil">Accueil</a>
+        <a href="#Promontion">Promontion</a>
+        <a href="#Lunettes pour femmes">Lunettes pour femmes</a>
+        <a href="#Lunettes pour hommes">Lunettes pour hommes</a>
+         <a href="#Lunettes pour enfants">Lunettes pour enfants</a>
+        <a href="#contact">Contact</a>
+        <a href="vision.html">Vision</a>
+
+    <section class="hero" id="accueil">
+        <h2>Clarté, Style et Confort pour vos yeux</h2>
+    </section>
+   
+     <section class="section" id="services">
+        <h2>Nos Services </h2>
+        <div class=">Nos Services">
+        <div class="products">
+             <div class="product">
+                <img src="PROMO.jpeg" alt="Pomontion   ">
+                <h3>Promontion </h3>
+                <p>Promontion jusqu'a 50'/. OFF.</p>
+            </div>
+            <div class="product">
+                <img src="lv2.jpeg" alt="Examen de la vue">
+                <h3>Examen de la vue</h3>
+                <p>Examen de la vue accompagné par appareil avancé.</p>
+            </div>
+            <div class="product">
+                <img src="te.jpeg" alt="Lunettes de vue et  de soleil">
+                <h3>Lunettes de vue et de soleil</h3>
+                <p>Protégez vos yeux avec style grâce à notre collection tendance.</p>
+            </div>
+            <div class="product">
+                <img src="ll.jpeg" alt="Lentilles de contact">
+                <h3>Lentilles de contact</h3>
+                <p>Vision claire et naturelle avec nos lentilles confortables.</p>
+            </div>
+        </div>
+    </section>
+"
+     <section class="section" id="Promontion">
+        <h2>Promontion</h2>
+        <div class=">produits">
+        <div class="products">
+             <div class="product">
+                <
+                <img src="LA.jpeg" alt="Pomontion   ">
+                
+            </div>
+            <div class="product">
+                <img src="LB.jpeg" alt="Examen de la vue">
+                
+                
+            </div>
+            <div class="product">
+                <img src="LC.jpeg" alt="Lunette">
+            </div>
+            <div class="product">
+                <img src="LD.jpeg" alt="Lentilles de contact">
+            
+            </div>
+        </div>
+    </section>
+    <section class="section" id="Lunettes pour femmes">
+        <h2>Lunettes pour femmes </h2>
+        <div class=">produits">
+        <div class="products">
+             <div class="product">
+                <
+                <img src="LA.jpeg" alt="Pomontion   ">
+                
+            </div>
+            <div class="product">
+                <img src="LB.jpeg" alt="Examen de la vue">
+                
+                
+            </div>
+            <div class="product">
+                <img src="LC.jpeg" alt="Lunette">
+            </div>
+            <div class="product">
+                <img src="LD.jpeg" alt="Lentilles de contact">
+            
+            </div>
+              <div class="product">
+                <img src="le.jpeg" alt="Lentilles de contact">
+            
+            </div>
+            <div class="product">
+                <img src="lf.jpeg" alt="Lentilles de contact">
+            
+            </div>
+            <div class="product">
+                <img src="ls.jpeg" alt="Lentilles de contact">
+            
+            </div>
+             <div class="product">
+                <img src="lj.jpeg" alt="Lentilles de contact">
+            
+            </div>
+             <div class="product">
+                <img src="lk.jpeg" alt="Lentilles de contact">
+            
+            </div>
+             <div class="product">
+                <img src="lp.jpeg" alt="Lentilles de contact">
+            
+            </div>
+             
+             <div class="product">
+                <img src="lq.jpeg" alt="Lentilles de contact">
+               </div>
+             <div class="product">
+                <img src="lo.jpeg" alt="Lentilles de contact">
+            
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="Lunettes pour hommes">
+        <h2>Lunettes pour hommes </h2>
+        <div class=">produits">
+        <div class="products">
+             <div class="product">
+                <
+                <img src="da.jpeg" alt="Pomontion   ">
+                
+            </div>
+            <div class="product">
+                <img src="db.jpeg" alt="Examen de la vue">
+                
+                
+            </div>
+            <div class="product">
+                <img src="dc.jpeg" alt="Lunette">
+            </div>
+            <div class="product">
+                <img src="de.jpeg" alt="Lentilles de contact">
+            
+            </div>
+              <div class="product">
+                <img src="df.jpeg" alt="Lentilles de contact">
+            
+            </div>
+            <div class="product">
+                <img src="dn.jpeg" alt="Lentilles de contact">
+            
+            </div>
+            <div class="product">
+                <img src="dj.jpeg" alt="Lentilles de contact">
+            
+            </div>
+             <div class="product">
+                <img src="dk.jpeg" alt="Lentilles de contact">
+            
+            </div>
+             <div class="product">
+                <img src="dt.jpeg" alt="Lentilles de contact">
+            
+            </div>
+             <div class="product">
+                <img src="dv.jpeg" alt="Lentilles de contact">
+            
+            </div>
+             
+             <div class="product">
+                <img src="dl.jpeg" alt="Lentilles de contact">
+               </div>
+             <div class="product">
+                <img src="di.jpeg" alt="Lentilles de contact">
+            
+            </div>
+        </div>
+    </section>
+       <section class="section" id="Lunettes pour enfants">
+        <h2>Lunettes pour enfantsv </h2>
+        <div class=">produits">
+        <div class="products">
+             <div class="product">
+                <
+                <img src="ea.jpeg" alt="Pomontion   ">
+                
+            </div>
+            <div class="product">
+                <img src="eb.jpeg" alt="Examen de la vue">
+                
+                
+            </div>
+            <div class="product">
+                <img src="ec.jpeg" alt="Lunette">
+            </div>
+            <div class="product">
+                <img src="ee.jpeg" alt="Lentilles de contact">
+            
+            </div>
+              <div class="product">
+                <img src="es.jpeg" alt="Lentilles de contact">
+            
+            </div>
+            <div class="product">
+                <img src="ed.jpeg" alt="Lentilles de contact">
+            
+            </div>
+            <div class="product">
+                <img src="ez.jpeg" alt="Lentilles de contact">
+            
+            </div>
+             <div class="product">
+                <img src="ep.jpeg" alt="Lentilles de contact">
+            
+            </div>
+             <div class="product">
+                <img src="er.jpeg" alt="Lentilles de contact">
+            
+            </div>
+             <div class="product">
+                <img src="eq.jpeg" alt="Lentilles de contact">
+            
+            </div>
+             
+             <div class="product">
+                <img src="ef.jpeg" alt="Lentilles de contact">
+               </div>
+             <div class="product">
+                <img src="ex.jpeg" alt="Lentilles de contact">
+            
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="contact">
+        <p>📍 Adresse : Double voix Oulad arfa, Kenitra</p>
+        <p>📞 Téléphone : 08 08 59 51 93</p>
+        <p>© 2026 Énergie Vision - Tous droits réservés</p>
+    </footer
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <img id="lightboxImg" src="" alt="Agrandissement">
+    </div>
+
+    <script>
+        // Sélection des éléments
+        const images = document.querySelectorAll('.product img');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const closeBtn = document.getElementById('closeBtn');
+
+        // Ouvrir l'image en grand au clic
+        images.forEach(img => {
+            img.addEventListener('click', () => {
+                lightbox.style.display = 'flex';
+                lightboxImg.src = img.src;
+            });
+        });
+
+        // Fermer au clic sur la croix
+        closeBtn.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+
+        // Fermer si on clique en dehors de l'image
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+    </script>
+    <!-- Bouton WhatsApp -->
+    <a href="https://wa.me/212662739160" class="whatsapp-float" target="_blank" title="Contactez-nous sur WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+    </a>
+</body>
+</html>
         <a href="#Promontion">Promontion</a>
         <a href="#Lunettes pour femmes">Lunettes pour femmes</a>
         <a href="#Lunettes pour hommes">Lunettes pour hommes</a>
